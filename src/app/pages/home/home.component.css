@@ -1,0 +1,16 @@
+.carousel-inner{
+    height: 700px; 
+}
+ .carousel-inner .carousel-caption h2{
+        color:  rgb(255, 0, 0);
+        font-size: 40px;
+        
+}
+
+ .carousel-inner .carousel-item{
+        object-fit: cover;
+        height: 700px;
+    }
+.carousel-inner .carousel-caption p{
+    color: white;
+}

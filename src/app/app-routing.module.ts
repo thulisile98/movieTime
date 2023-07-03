@@ -8,10 +8,10 @@ const routes: Routes = [
   {
     path: '', component: HomeComponent
   },
-  { path: '/search', component: SearchComponent }
+  { path: 'search', component: SearchComponent }
   ,
   {
-    path: '/movie/:id', component:
+    path: 'movie/:id', component:
       MovieDetailsComponent
   }
 
