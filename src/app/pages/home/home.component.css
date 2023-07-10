@@ -25,4 +25,14 @@
 .rowimg{
     max-height: 200px;
     object-fit: contain;
+    box-sizing: content-box;
+    transition: transform 450ms;
+}
+
+.rowimg:hover{
+ transform: scale(1.08);
+ cursor: pointer;
+}
+.largeposter{
+    max-height: 300px;
 }
