@@ -1,16 +1,10 @@
 <div class="container_fluid">
-<!-- <div *ngFor="let movie of movies.results">
-  <h3>{{ movie.title }}</h3>
-  <p>{{ movie.overview }}</p>
-  <p>{{ movie.backdrop_path }}</p> -->
-  
-
   <div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="100"  *ngFor="let movie of movies.results;let i = index" [ngClass]="{active:i===1}">
       <img src="https://image.tmdb.org/t/p/original/{{movie.backdrop_path}}" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h2>{{ movie.title }}</h2>
+        <h1>{{ movie.title }}</h1>
         <p>{{movie.overview}}</p>
       </div>
     </div>
@@ -23,6 +17,19 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-  <!-- Display other movie properties as needed -->
 </div>
+
+<div class="contain mt-3 p-4">
+  <div class="row">
+       <h4 class="text-white">Trending Movies</h4>
+       <div class="rowposter">
+        <ng-container *ngFor="let t of trending.results">
+
+          <img src="https://image.tmdb.org/t/p/original/{{t.poster_path}}" class="rowimg largeposter" alt="...">
+
+        </ng-container>
+        </div>
+       </div>
+  </div>
 </div>
+

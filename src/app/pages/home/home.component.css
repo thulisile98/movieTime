@@ -1,9 +1,10 @@
 .carousel-inner{
     height: 700px; 
 }
- .carousel-inner .carousel-caption h2{
+ .carousel-inner .carousel-caption h1{
         color:  rgb(255, 0, 0);
         font-size: 40px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         
 }
 
@@ -13,4 +14,15 @@
     }
 .carousel-inner .carousel-caption p{
     color: white;
+}
+
+.rowposter{
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.rowimg{
+    max-height: 200px;
+    object-fit: contain;
 }

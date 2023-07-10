@@ -8,11 +8,13 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   movies: any = [];
+  trending:any=[];
   constructor(private movieapiservice: MovieApiServiceService) {
 
   }
   ngOnInit(): void {
     this.bannerData();
+    this.trendingMovie();
   }
 
   bannerData() {
@@ -20,6 +22,14 @@ export class HomeComponent {
       console.log(result);
       this.movies = result;
     })
+  }
+
+  trendingMovie()
+  {
+    this.movieapiservice.trendingMovies().subscribe((results=>{
+      console.log(results);
+      this.trending=results;
+    }))
   }
 
 }
