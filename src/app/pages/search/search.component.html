@@ -16,10 +16,10 @@
     <div class="row mt-5">
         <div class="col-lg-4" *ngFor="let s of searchResult">
             <div class="row">
-                <div class="col-lg-3 mt-3 mb-3">
+                <div class="col-lg-3 mt-4 mb-4" *ngIf="s.backdrop_path">
                     <img src="https://image.tmdb.org/t/p/original/{{s.backdrop_path}}" alt="">
                 </div>
-                <div class="col-lg-9 mt-3 mb-3">
+                <div class="col-lg-9 mt-4 mb-4">
                   <h3>{{s.original_title}}</h3>
                   {{s.overview}}
                 </div>
