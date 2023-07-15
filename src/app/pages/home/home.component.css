@@ -30,9 +30,12 @@
 }
 
 .rowimg:hover{
- transform: scale(1.08);
+ transform: scale(1.50);
  cursor: pointer;
 }
 .largeposter{
     max-height: 300px;
+}
+.rowposter::-webkit-scrollbar{
+    display: none;
 }

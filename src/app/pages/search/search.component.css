@@ -1,0 +1,15 @@
+.btn{
+    color:  white;
+    background-color: rgb(255, 0, 0);
+}
+.btn:hover{
+    color:  white;
+    background-color: green;
+}
+img{
+ width: 100%;
+
+}
+h3{
+    color: white;
+}
