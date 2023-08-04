@@ -7,6 +7,7 @@ import { MovieApiServiceService } from 'src/app/service/movie-api-service.servic
   templateUrl: './movie-details.component.html',
   styleUrls: ['./movie-details.component.css']
 })
+
 export class MovieDetailsComponent implements OnInit{
 
   getMovieDetailsResults:any;
@@ -24,8 +25,7 @@ export class MovieDetailsComponent implements OnInit{
   console.log(results,'getMoviedetails#');
   this.getMovieDetailsResults = results;
   }))
-
-  }
+}
 
 
 }
