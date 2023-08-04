@@ -1,16 +1,9 @@
-
-  <div class="card">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="https://image.tmdb.org/t/p/original/{{getMovieDetailsResults.backdrop_path}}" class="img-fluid rounded-start" alt="...">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h2 class="card-title">{{getMovieDetailsResults.original_title}}</h2>
-          <p class="card-text">{{getMovieDetailsResults.overview}}</p>
-          <p class="date">{{getMovieDetailsResults.release_date}}</p>
-          <p class="card-text"><small class="text-muted">{{getMovieDetailsResults.tagline}}</small></p>
-        </div>
-      </div>
+ <div class="card mb-3">
+    <img src="https://image.tmdb.org/t/p/original/{{getMovieDetailsResults.backdrop_path}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h1 class="card-title">{{getMovieDetailsResults.original_title}}</h1>
+      <p class="card-text">{{getMovieDetailsResults.overview}}</p>
+      <p class="card-text"><small class="text-body-secondary">{{getMovieDetailsResults.release_date}}</small></p>
+      <p class="card-text">{{getMovieDetailsResults.tagline}}</p>
     </div>
   </div>
