@@ -27,6 +27,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   
   }
+  .card-title{
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
 
   @media (max-width: 400px) {
     .card {
